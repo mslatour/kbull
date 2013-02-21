@@ -8,6 +8,9 @@ No guarantees whatsoever, I just wrote it for myself because I wanted to. It mig
 Usage
 -----
 
+    #!/bin/bash
+
+    # Point to the kbull init script
     source init.sh
 
     log "INFO" "You can set a timer using 'begin'" "blue"
@@ -20,7 +23,7 @@ Usage
     log "INFO" "You can print a command and run it at the same time" "yellow"
     run "echo \"Hello World\""
     log "INFO" "You can let run only execute a command, if some result file does not exist yet" "green"
-    run\_safe "cat file1 > file2" "file2"
+    run_safe "cat file1 > file2" "file2"
 
     fgcolor "red"
 
@@ -31,4 +34,5 @@ Usage
 
     end
 
-    resetcolor # At the end, reset the colors
+    # At the end, reset the colors
+    resetcolor
